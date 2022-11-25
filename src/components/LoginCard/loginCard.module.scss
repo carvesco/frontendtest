@@ -1,0 +1,55 @@
+.card_container {
+  border: 1px solid #76bd2e;
+  border-radius: 15px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.input_container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.input_label {
+  width: 30%;
+  color: #76bd2e;
+  text-align: center;
+}
+.input_field {
+  width: 60%;
+  background-color: #d0f7aa;
+  border: 1px solid #76bd2e;
+  border-radius: 5px;
+  height: 24px;
+}
+
+.button{
+    background-color: #76bd2e;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.signup_text{
+    color: #d0f7aa;
+    display: flex;
+    flex-direction: row;
+}
+.signup_link{
+    margin: 0;
+    margin-left: 2px;
+    color: #e0f6ca;
+    cursor: pointer;
+}
+
+.title{
+    color: #76bd2e;
+    margin-bottom: 2rem;
+  }
