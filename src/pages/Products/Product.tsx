@@ -1,8 +1,11 @@
 import { Container, Typography } from "@mui/material";
-import React from "react";
+import React,{useContext} from "react";
 import styles from "./product.module.scss";
+import { useAuth } from "../../hooks/useAuth"; 
 
 const Product = () => {
+  const {token, setToken} = useAuth()
+  console.log("jwt:",token)
   return (
     <div className={styles.background}>
       <div className={styles.container}>

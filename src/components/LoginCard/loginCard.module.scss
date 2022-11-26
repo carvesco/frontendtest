@@ -31,25 +31,29 @@
   height: 24px;
 }
 
-.button{
-    background-color: #76bd2e;
-    width: 30%;
-    border-radius: 15px;
+.button {
+  background-color: #76bd2e;
+  width: 30%;
+  border-radius: 15px;
 }
 
-.signup_text{
-    color: #d0f7aa;
-    display: flex;
-    flex-direction: row;
+.signup_text {
+  color: #d0f7aa;
+  display: flex;
+  flex-direction: row;
 }
-.signup_link{
-    margin: 0;
-    margin-left: 2px;
-    color: #e0f6ca;
-    cursor: pointer;
+.signup_link {
+  margin: 0;
+  margin-left: 2px;
+  color: #e0f6ca;
+  cursor: pointer;
 }
 
-.title{
-    color: #76bd2e;
-    margin-bottom: 2rem;
-  }
+.title {
+  color: #76bd2e;
+  margin-bottom: 2rem;
+}
+
+.error_text {
+  color: #bcb63d;
+}

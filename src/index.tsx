@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -6,16 +6,16 @@ import Login from "./pages/Login/Login";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, Route, createBrowserRouter } from "react-router-dom";
 import Product from "./pages/Products/Product";
-
+import { AuthProvider } from "./hooks/useAuth";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
   },
   {
-    path:"/products",
-    element: <Product/>
-  }
+    path: "/products",
+    element: <Product />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(
@@ -24,7 +24,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );
 
