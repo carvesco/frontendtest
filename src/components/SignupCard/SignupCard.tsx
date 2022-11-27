@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import styles from "./signupCard.module.scss";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useAuth } from "../../hooks/useAuth";
 
 const baseURL = "http://localhost:4000/users";
 
 const SignupCard = (props: any) => {
   const navigate = useNavigate();
+  const {token, setToken} = useAuth()
   const [signUpError, setsignUpError] = useState(false);
   const [signUpInfo, setSignUpInfo] = useState<{
     email: string;
@@ -28,6 +30,7 @@ const SignupCard = (props: any) => {
       })
       .then((response) => {
         if (response?.data?.token) {
+          setToken(response.data.token)
           navigate("/products");
           setsignUpError(false);
         } else {

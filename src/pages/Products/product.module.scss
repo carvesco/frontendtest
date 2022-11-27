@@ -1,6 +1,7 @@
 .background {
   background-color: #476528;
-  height: 100vh;
+  //height: 100%;
+  padding-bottom: 5rem;
 }
 
 .container {
@@ -10,9 +11,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 .title {
-  color: #76bd2e;
+  color: #9af83d;
+}
+
+.buttons{
+  margin: 1rem;
+  margin-bottom: 4rem;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
 }
